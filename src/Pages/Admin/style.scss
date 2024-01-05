@@ -1,0 +1,125 @@
+.modal {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(#000000, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+
+    &__content {
+        max-height: 800px;
+        max-width: 500px;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+
+        &-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding: 20px;
+
+            &>div {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 100%;
+                }
+
+                svg {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background-color: black;
+                    padding: 5px;
+                    border-radius: 7px;
+
+                    * {
+                        fill: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .closeModal {
+        
+        position: absolute;
+        position: fixed;
+        margin-left: 27rem;
+        width: 3rem;
+        
+    }
+
+}
+
+.modifyProjects {
+   display: grid;
+    grid-template-columns:  1fr 1fr;
+    
+    text-align: center;
+
+    h2 {
+        margin-left: 17rem;
+    }
+    .modifyButton {
+        width: 6rem;
+        height: 2rem;
+        margin-top: 3rem;
+        margin-right: 10rem;
+    
+        span {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-right: 10px;
+        };
+      
+    
+    }
+}
+
+.addButton
+{
+    width: 80%;
+    height: 3rem;
+    background-color: #1D6154;
+    color: white;
+    font-family: Syne;
+    font-size: 1.2rem;
+    justify-content: center;
+    margin: auto;
+    border-radius: 2rem ;
+    -webkit-border-radius: 2rem ;
+    -moz-border-radius: 2rem ;
+    -ms-border-radius: 2rem ;
+    -o-border-radius: 2rem ;
+
+    span
+    {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-right: 10px;
+    };
+}
+
+.modal__content-add {
+
+.inputFile {
+
+    width: 100%;
+    height: 20%;
+
+
+    
+}
+}
